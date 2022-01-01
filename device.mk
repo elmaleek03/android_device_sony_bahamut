@@ -25,8 +25,7 @@ $(call inherit-product, vendor/sony/bahamut/bahamut-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -91,6 +90,17 @@ PRODUCT_PACKAGES_DEBUG += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
+	
+# Using Sony Vendor Camera
+PRODUCT_PACKAGES += \
+    SemcCameraUI-xxhdpi-release \
+    CameraAddonPermission \
+    CameraCommonPermission \
+    CameraExtensionPermission \
+	ImageProcessorPermission \
+	CameraCommon
+    
+	
 
 # Common init scripts
 PRODUCT_PACKAGES += \
