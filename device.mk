@@ -94,11 +94,6 @@ PRODUCT_PACKAGES += \
 # Using Sony Vendor Camera
 PRODUCT_PACKAGES += \
     SemcCameraUI-xxhdpi-release \
-    CameraAddonPermission \
-    CameraCommonPermission \
-    CameraExtensionPermission \
-	ImageProcessorPermission \
-	CameraCommon
     
 	
 
